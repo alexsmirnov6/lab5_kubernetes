@@ -1,0 +1,11 @@
+{
+  "source_repository": "https://github.com/alexsmirnov6/lab3_devops",
+  "source_commit": "91d07734e297d2543073923be46f33c9f14eb52b",
+  "files": {
+    "data/vacancies.ndjson": "5c9daf1ac2c16c3aad36d97e6e23c7cffc6d92f0cf4ca215d73f8140e721b0c7",
+    "reference/lab3_pairs.json": "ba6dcc751253937d2322bfc7d2985c387f113149c7bed7e73b7030fea69e512e",
+    "src/pairs.py": "3590c80b356a3d08107eb9780c51fccff0575a5792239779488126205bb1821c"
+  },
+  "input_origin": "../lab3/data/prepared/devops_vacancies.ndjson",
+  "reference_origin": "../lab3/results/mapreduce/pairs.json"
+}

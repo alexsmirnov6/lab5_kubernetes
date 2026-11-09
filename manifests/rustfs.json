@@ -1,0 +1,89 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "rustfs",
+    "namespace": "lab5"
+  },
+  "spec": {
+    "replicas": 1,
+    "strategy": {
+      "type": "Recreate"
+    },
+    "selector": {
+      "matchLabels": {
+        "app": "rustfs"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "rustfs"
+        }
+      },
+      "spec": {
+        "nodeSelector": {
+          "lab": "compute"
+        },
+        "securityContext": {
+          "fsGroup": 1000
+        },
+        "containers": [
+          {
+            "name": "rustfs",
+            "image": "rustfs/rustfs:1.0.0",
+            "imagePullPolicy": "Never",
+            "args": [
+              "/data"
+            ],
+            "env": [
+              {
+                "name": "RUSTFS_ACCESS_KEY",
+                "value": "lab5-access"
+              },
+              {
+                "name": "RUSTFS_SECRET_KEY",
+                "value": "lab5-local-secret"
+              },
+              {
+                "name": "RUSTFS_CONSOLE_ENABLE",
+                "value": "false"
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "256Mi"
+              },
+              "limits": {
+                "cpu": "500m",
+                "memory": "1Gi"
+              }
+            },
+            "readinessProbe": {
+              "tcpSocket": {
+                "port": 9000
+              },
+              "initialDelaySeconds": 5,
+              "periodSeconds": 2
+            },
+            "volumeMounts": [
+              {
+                "name": "data",
+                "mountPath": "/data"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "data",
+            "persistentVolumeClaim": {
+              "claimName": "rustfs-data"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

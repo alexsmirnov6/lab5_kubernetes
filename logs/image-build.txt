@@ -1,0 +1,50 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 295B done
+#1 DONE 0.0s
+
+#2 [auth] library/python:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12.12-slim
+#3 DONE 0.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 104B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 15.99kB done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.12.12-slim@sha256:f3fa41d74a768c2fce8016b98c191ae8c1bacd8f1152870a3f9f87d350920b7c
+#6 resolve docker.io/library/python:3.12.12-slim@sha256:f3fa41d74a768c2fce8016b98c191ae8c1bacd8f1152870a3f9f87d350920b7c 0.0s done
+#6 DONE 0.0s
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [3/6] COPY requirements.txt .
+#8 CACHED
+
+#9 [4/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [5/6] COPY src/ ./src/
+#10 DONE 0.1s
+
+#11 [6/6] COPY data/vacancies.ndjson /data/vacancies.ndjson
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 0.2s done
+#12 exporting manifest sha256:cfd5e4570fd789a68ca7b6d294a4169e93855697af493fe4215a6ea27d1196f1 0.0s done
+#12 exporting config sha256:794ca69fde6dbe3d8b647d800046840f77ce2523b5e65752ed58b374e5db8f9d 0.0s done
+#12 exporting attestation manifest sha256:f9e7157d3ab247ab75690504cfa979ccfd37a604a382fd08c653228c90e5b436 0.1s done
+#12 exporting manifest list sha256:ad77d00414939b39d5baf2ff82b4e11625be41fdee3b0ec618c1992d7311e0f7
+#12 exporting manifest list sha256:ad77d00414939b39d5baf2ff82b4e11625be41fdee3b0ec618c1992d7311e0f7 0.0s done
+#12 naming to docker.io/library/lab5-pairs:1 done
+#12 unpacking to docker.io/library/lab5-pairs:1 0.1s done
+#12 DONE 0.5s

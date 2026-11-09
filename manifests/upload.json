@@ -1,0 +1,54 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "upload",
+    "namespace": "lab5"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "template": {
+      "spec": {
+        "restartPolicy": "Never",
+        "terminationGracePeriodSeconds": 3,
+        "nodeSelector": {
+          "lab": "compute"
+        },
+        "containers": [
+          {
+            "name": "pairs",
+            "image": "lab5-pairs:1",
+            "imagePullPolicy": "Never",
+            "args": [
+              "upload"
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "64Mi"
+              },
+              "limits": {
+                "cpu": "250m",
+                "memory": "256Mi"
+              }
+            },
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs:9000"
+              },
+              {
+                "name": "AWS_ACCESS_KEY_ID",
+                "value": "lab5-access"
+              },
+              {
+                "name": "AWS_SECRET_ACCESS_KEY",
+                "value": "lab5-local-secret"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

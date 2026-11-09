@@ -1,0 +1,91 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 get events -n lab5 --sort-by=.metadata.creationTimestamp
+LAST SEEN   TYPE      REASON                  OBJECT                              MESSAGE
+65s         Normal    Scheduled               pod/pairs-oom-kd2jf                 Successfully assigned lab5/pairs-oom-kd2jf to lab5-worker
+65s         Normal    SuccessfulCreate        job/pairs-oom                       Created pod: pairs-oom-kd2jf
+64s         Normal    Created                 pod/pairs-oom-kd2jf                 Container created
+64s         Normal    Pulled                  pod/pairs-oom-kd2jf                 Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+64s         Normal    Started                 pod/pairs-oom-kd2jf                 Container started
+61s         Warning   BackoffLimitExceeded    job/pairs-oom                       Job has reached the specified backoff limit
+60s         Normal    SuccessfulCreate        job/pairs-profile-0                 Created pod: pairs-profile-0-rjn24
+60s         Normal    Scheduled               pod/pairs-profile-0-rjn24           Successfully assigned lab5/pairs-profile-0-rjn24 to lab5-worker
+59s         Normal    Started                 pod/pairs-profile-0-rjn24           Container started
+59s         Normal    Created                 pod/pairs-profile-0-rjn24           Container created
+59s         Normal    Pulled                  pod/pairs-profile-0-rjn24           Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+56s         Normal    Completed               job/pairs-profile-0                 Job completed
+55s         Normal    SuccessfulCreate        job/pairs-profile-1                 Created pod: pairs-profile-1-cvtx4
+55s         Normal    Scheduled               pod/pairs-profile-1-cvtx4           Successfully assigned lab5/pairs-profile-1-cvtx4 to lab5-worker
+54s         Normal    Pulled                  pod/pairs-profile-1-cvtx4           Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+54s         Normal    Created                 pod/pairs-profile-1-cvtx4           Container created
+54s         Normal    Started                 pod/pairs-profile-1-cvtx4           Container started
+51s         Normal    Completed               job/pairs-profile-1                 Job completed
+50s         Normal    Scheduled               pod/pairs-profile-2-llr4s           Successfully assigned lab5/pairs-profile-2-llr4s to lab5-worker
+50s         Normal    Pulled                  pod/pairs-profile-2-llr4s           Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+50s         Normal    SuccessfulCreate        job/pairs-profile-2                 Created pod: pairs-profile-2-llr4s
+49s         Normal    Started                 pod/pairs-profile-2-llr4s           Container started
+46s         Normal    Completed               job/pairs-profile-2                 Job completed
+45s         Normal    Started                 pod/pairs-sized-h9h2b               Container started
+45s         Normal    Scheduled               pod/pairs-sized-h9h2b               Successfully assigned lab5/pairs-sized-h9h2b to lab5-worker
+45s         Normal    Pulled                  pod/pairs-sized-h9h2b               Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+45s         Normal    Created                 pod/pairs-sized-h9h2b               Container created
+45s         Normal    SuccessfulCreate        job/pairs-sized                     Created pod: pairs-sized-h9h2b
+40s         Normal    Completed               job/pairs-sized                     Job completed
+39s         Normal    ScalingReplicaSet       deployment/rustfs                   Scaled up replica set rustfs-67bbc4b96f from 0 to 1
+39s         Normal    SuccessfulCreate        replicaset/rustfs-67bbc4b96f        Created pod: rustfs-67bbc4b96f-tcg68
+39s         Normal    WaitForFirstConsumer    persistentvolumeclaim/rustfs-data   waiting for first consumer to be created before binding
+39s         Normal    ExternalProvisioning    persistentvolumeclaim/rustfs-data   Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+39s         Normal    Provisioning            persistentvolumeclaim/rustfs-data   External provisioner is provisioning volume for claim "lab5/rustfs-data"
+37s         Normal    Created                 pod/pairs-profile-2-llr4s           Container created
+36s         Normal    ProvisioningSucceeded   persistentvolumeclaim/rustfs-data   Successfully provisioned volume pvc-69a45f0f-d25a-4d80-8c2f-276228471e26
+35s         Normal    Scheduled               pod/rustfs-67bbc4b96f-tcg68         Successfully assigned lab5/rustfs-67bbc4b96f-tcg68 to lab5-worker
+34s         Normal    Started                 pod/rustfs-67bbc4b96f-tcg68         Container started
+34s         Normal    Pulled                  pod/rustfs-67bbc4b96f-tcg68         Container image "rustfs/rustfs:1.0.0" already present on machine and can be accessed by the pod
+34s         Normal    Created                 pod/rustfs-67bbc4b96f-tcg68         Container created
+28s         Normal    Scheduled               pod/upload-vp4k8                    Successfully assigned lab5/upload-vp4k8 to lab5-worker
+28s         Normal    SuccessfulCreate        job/upload                          Created pod: upload-vp4k8
+27s         Normal    Started                 pod/upload-vp4k8                    Container started
+27s         Normal    Pulled                  pod/upload-vp4k8                    Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+27s         Normal    Created                 pod/upload-vp4k8                    Container created
+25s         Normal    Completed               job/upload                          Job completed
+24s         Normal    SuccessfulCreate        job/pairs-parallel                  Created pod: pairs-parallel-0-9vx6h
+24s         Normal    Scheduled               pod/pairs-parallel-0-9vx6h          Successfully assigned lab5/pairs-parallel-0-9vx6h to lab5-worker
+24s         Normal    SuccessfulCreate        job/pairs-parallel                  Created pod: pairs-parallel-1-4rrkc
+24s         Normal    Scheduled               pod/pairs-parallel-1-4rrkc          Successfully assigned lab5/pairs-parallel-1-4rrkc to lab5-worker
+24s         Normal    Scheduled               pod/pairs-parallel-3-98hc8          Successfully assigned lab5/pairs-parallel-3-98hc8 to lab5-worker
+24s         Normal    SuccessfulCreate        job/pairs-parallel                  Created pod: pairs-parallel-3-98hc8
+24s         Normal    SuccessfulCreate        job/pairs-parallel                  Created pod: pairs-parallel-2-j6hp5
+24s         Normal    Scheduled               pod/pairs-parallel-2-j6hp5          Successfully assigned lab5/pairs-parallel-2-j6hp5 to lab5-worker
+23s         Normal    Pulled                  pod/pairs-parallel-1-4rrkc          Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+23s         Normal    Created                 pod/pairs-parallel-1-4rrkc          Container created
+23s         Normal    Started                 pod/pairs-parallel-3-98hc8          Container started
+23s         Normal    Created                 pod/pairs-parallel-0-9vx6h          Container created
+23s         Normal    Pulled                  pod/pairs-parallel-3-98hc8          Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+23s         Normal    Started                 pod/pairs-parallel-2-j6hp5          Container started
+23s         Normal    Created                 pod/pairs-parallel-2-j6hp5          Container created
+23s         Normal    Started                 pod/pairs-parallel-0-9vx6h          Container started
+23s         Normal    Created                 pod/pairs-parallel-3-98hc8          Container created
+23s         Normal    Pulled                  pod/pairs-parallel-0-9vx6h          Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+23s         Normal    Started                 pod/pairs-parallel-1-4rrkc          Container started
+23s         Normal    Pulled                  pod/pairs-parallel-2-j6hp5          Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+20s         Normal    Completed               job/pairs-parallel                  Job completed
+19s         Normal    SuccessfulCreate        job/pairs-reduce                    Created pod: pairs-reduce-2msrq
+19s         Normal    Scheduled               pod/pairs-reduce-2msrq              Successfully assigned lab5/pairs-reduce-2msrq to lab5-worker
+18s         Normal    Started                 pod/pairs-reduce-2msrq              Container started
+18s         Normal    Created                 pod/pairs-reduce-2msrq              Container created
+18s         Normal    Pulled                  pod/pairs-reduce-2msrq              Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+14s         Normal    Completed               job/pairs-reduce                    Job completed
+11s         Normal    Scheduled               pod/low                             Successfully assigned lab5/low to lab5-worker
+11s         Normal    Started                 pod/low                             Container started
+11s         Normal    Created                 pod/low                             Container created
+11s         Normal    Pulled                  pod/low                             Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+10s         Normal    Preempted               pod/low                             Preempted by pod 9233e471-086b-4ff9-a358-57d948a3affe on node lab5-worker
+10s         Normal    Killing                 pod/low                             Stopping container pairs
+10s         Warning   FailedScheduling        pod/high                            0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: found a potential placement for pod on node lab5-worker, preempting 1 victims
+7s          Warning   FailedScheduling        pod/waiting                         0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: 0/2 nodes are available: 1 Insufficient cpu, 1 Preemption is not helpful for scheduling.
+7s          Normal    Scheduled               pod/high                            Successfully assigned lab5/high to lab5-worker
+6s          Normal    Created                 pod/high                            Container created
+6s          Normal    Started                 pod/high                            Container started
+6s          Normal    Pulled                  pod/high                            Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+4s          Normal    Killing                 pod/high                            Stopping container pairs
+0s          Normal    Created                 pod/quota-ok                        Container created
+0s          Normal    Pulled                  pod/quota-ok                        Container image "lab5-pairs:1" already present on machine and can be accessed by the pod
+0s          Normal    Scheduled               pod/quota-ok                        Successfully assigned lab5/quota-ok to lab5-worker

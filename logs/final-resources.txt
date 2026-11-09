@@ -1,0 +1,37 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 get all,pvc -n lab5 -o wide
+NAME                          READY   STATUS              RESTARTS   AGE   IP            NODE          NOMINATED NODE   READINESS GATES
+pod/pairs-oom-kd2jf           0/1     OOMKilled           0          65s   10.244.1.55   lab5-worker   <none>           <none>
+pod/pairs-parallel-0-9vx6h    0/1     Completed           0          24s   10.244.1.63   lab5-worker   <none>           <none>
+pod/pairs-parallel-1-4rrkc    0/1     Completed           0          24s   10.244.1.65   lab5-worker   <none>           <none>
+pod/pairs-parallel-2-j6hp5    0/1     Completed           0          24s   10.244.1.64   lab5-worker   <none>           <none>
+pod/pairs-parallel-3-98hc8    0/1     Completed           0          24s   10.244.1.66   lab5-worker   <none>           <none>
+pod/pairs-profile-0-rjn24     0/1     Completed           0          60s   10.244.1.56   lab5-worker   <none>           <none>
+pod/pairs-profile-1-cvtx4     0/1     Completed           0          55s   10.244.1.57   lab5-worker   <none>           <none>
+pod/pairs-profile-2-llr4s     0/1     Completed           0          50s   10.244.1.58   lab5-worker   <none>           <none>
+pod/pairs-reduce-2msrq        0/1     Completed           0          19s   10.244.1.67   lab5-worker   <none>           <none>
+pod/pairs-sized-h9h2b         0/1     Completed           0          45s   10.244.1.59   lab5-worker   <none>           <none>
+pod/quota-ok                  0/1     ContainerCreating   0          0s    <none>        lab5-worker   <none>           <none>
+pod/rustfs-67bbc4b96f-tcg68   1/1     Running             0          39s   10.244.1.61   lab5-worker   <none>           <none>
+pod/upload-vp4k8              0/1     Completed           0          28s   10.244.1.62   lab5-worker   <none>           <none>
+
+NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/rustfs   ClusterIP   10.96.225.143   <none>        9000/TCP   39s   app=rustfs
+
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                SELECTOR
+deployment.apps/rustfs   1/1     1            1           39s   rustfs       rustfs/rustfs:1.0.0   app=rustfs
+
+NAME                                DESIRED   CURRENT   READY   AGE   CONTAINERS   IMAGES                SELECTOR
+replicaset.apps/rustfs-67bbc4b96f   1         1         1       39s   rustfs       rustfs/rustfs:1.0.0   app=rustfs,pod-template-hash=67bbc4b96f
+
+NAME                        STATUS     COMPLETIONS   DURATION   AGE   CONTAINERS   IMAGES         SELECTOR
+job.batch/pairs-oom         Failed     0/1           65s        65s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=5b44cd22-f9cb-4301-b715-2daf3b1154ba
+job.batch/pairs-parallel    Complete   4/4           4s         24s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=cf56eb55-d503-48bc-8855-f6e6f24270d1
+job.batch/pairs-profile-0   Complete   1/1           4s         60s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=31c07a15-d803-48e7-a4a9-7202f84a6352
+job.batch/pairs-profile-1   Complete   1/1           4s         55s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=3ac7f4b3-afbc-4cfb-a9bf-c843d398be64
+job.batch/pairs-profile-2   Complete   1/1           4s         50s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=1a7094a3-027e-4c49-a5a0-fd5ab370a773
+job.batch/pairs-reduce      Complete   1/1           5s         19s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=5a7a6ada-a4d3-4b8b-b0b5-8da7e978caaf
+job.batch/pairs-sized       Complete   1/1           4s         45s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=6051029d-2722-4634-b8aa-0c4c7c2f1655
+job.batch/upload            Complete   1/1           3s         28s   pairs        lab5-pairs:1   batch.kubernetes.io/controller-uid=476a1c81-f9be-49dc-a4d9-2cfe2498a186
+
+NAME                                STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/rustfs-data   Bound    pvc-69a45f0f-d25a-4d80-8c2f-276228471e26   1Gi        RWO            standard       <unset>                 39s   Filesystem

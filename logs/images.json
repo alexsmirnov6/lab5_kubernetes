@@ -1,0 +1,128 @@
+[
+    {
+        "Id": "sha256:ad77d00414939b39d5baf2ff82b4e11625be41fdee3b0ec618c1992d7311e0f7",
+        "RepoTags": [
+            "lab5-pairs:1"
+        ],
+        "RepoDigests": [
+            "lab5-pairs@sha256:ad77d00414939b39d5baf2ff82b4e11625be41fdee3b0ec618c1992d7311e0f7"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-09T12:33:17.586464007Z",
+        "Config": {
+            "User": "1000:1000",
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.12",
+                "PYTHON_SHA256=fb85a13414b028c49ba18bbd523c2d055a30b56b18b92ce454ea2c51edc656c4",
+                "PYTHONUNBUFFERED=1"
+            ],
+            "Entrypoint": [
+                "python",
+                "src/pairs.py"
+            ],
+            "WorkingDir": "/app"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 64493697,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:a257f20c716c7b5d0474b1b5998f4d1090b573d90b82f764b8f1f1faeb4b524f",
+                "sha256:38d85a17b1111a95a0e407827441c6aa9da43d09ff3f1af3febe8017c4c8ffe7",
+                "sha256:c2a9fa0f49e59ec1a12af4d7e17adbd07a451685187864014235a8506b2c05de",
+                "sha256:a78468ad3279eed5c50477c62f98d1273a0fb7dfb383ad1c4b21c24bb3f908d1",
+                "sha256:8a9b116b0623ef2027969e6cb8eac7d76776d0cc1dc89e9186d532de3e575e5a",
+                "sha256:98f1f7aa8dbb1a6a54e3c4c081a0172939b417cbb5c36499987ad5b6dcbfbe60",
+                "sha256:09e8ee43a04e7e06691bd859000be58295b6c753629fa13332caeac3b57a1743",
+                "sha256:4d5ea1d5812d589f13533c19d4581113cd9ebd4e2cb0651cb14529e8b1ecd8c0",
+                "sha256:0030a86808f279549f1186446447a4d1f3d1501e5c72be5d1c70640792c4bc0c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-09T12:33:17.960698018Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:ad77d00414939b39d5baf2ff82b4e11625be41fdee3b0ec618c1992d7311e0f7",
+            "size": 856
+        }
+    },
+    {
+        "Id": "sha256:8cc9801755448b71a786705ce76692c77e14936cccd87cf2fc31842e58f4d1ff",
+        "RepoTags": [
+            "rustfs/rustfs:1.0.0"
+        ],
+        "RepoDigests": [
+            "rustfs/rustfs@sha256:8cc9801755448b71a786705ce76692c77e14936cccd87cf2fc31842e58f4d1ff"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-16T10:05:51.33056996Z",
+        "Config": {
+            "User": "rustfs",
+            "ExposedPorts": {
+                "9000/tcp": {},
+                "9001/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "RUSTFS_CONSOLE_CORS_ALLOWED_ORIGINS=*",
+                "RUSTFS_VOLUMES=/data",
+                "RUSTFS_OBS_LOGGER_LEVEL=warn",
+                "RUSTFS_OBS_LOG_DIRECTORY=/logs",
+                "RUSTFS_OBS_ENVIRONMENT=production"
+            ],
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Cmd": [
+                "rustfs"
+            ],
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/",
+            "Labels": {
+                "build-date": "",
+                "description": "RustFS is a distributed object storage system written in Rust, supporting erasure coding, multi-tenant management, and observability.",
+                "license": "Apache-2.0",
+                "maintainer": "RustFS Team <dev@rustfs.com>",
+                "name": "RustFS",
+                "org.opencontainers.image.title": "RustFS,org.opencontainers.image.description=RustFS distributed object storage system,org.opencontainers.image.version=1.0.0,org.opencontainers.image.revision=d47f54bfb2f39f48bd1adda334bd27e151fe85b8,org.opencontainers.image.source=https://github.com/rustfs/rustfs,org.opencontainers.image.created=2026-09-16T10:05:14Z,org.opencontainers.image.build-type=release",
+                "release": "1.0.0",
+                "summary": "High-performance distributed object storage system compatible with S3 API",
+                "url": "https://rustfs.com",
+                "vcs-ref": "",
+                "vendor": "RustFS Team",
+                "version": "v1.0.0"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 109669715,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:34884abbe92863fce933ed7c39c0e045631af0ed86d5cc0dfbdf9fdca426ce3c",
+                "sha256:8484fb198fc25c61583e3d42259f3dbfb8561b232b988436663fee01e771e81a",
+                "sha256:5ed99fd16a24ab541cd492bf080ce1c4bd31c26b567227ef801545cfdc718a51",
+                "sha256:40fc2ce12bb7b67cea697f2f544d944f944c731ae2753b0974ce32fd17c26337",
+                "sha256:e5ba8e12218d93d641eb880e940562ff98b715348d4e59b84f04ef943d724487",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:81dedda1d12d97c33bbe7c5ac8905a8396a251fcb15621e6a1efa28f57ecfd6a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-27T14:37:26.573676638Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:8cc9801755448b71a786705ce76692c77e14936cccd87cf2fc31842e58f4d1ff",
+            "size": 1611
+        }
+    }
+]

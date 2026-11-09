@@ -1,0 +1,2 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 apply -f C:\Users\Alex\Documents\inj_dan\lab5\manifests\quota-rejected.json
+Error from server (Forbidden): error when creating "C:\\Users\\Alex\\Documents\\inj_dan\\lab5\\manifests\\quota-rejected.json": pods "quota-rejected" is forbidden: exceeded quota: compute-budget, requested: requests.cpu=400m, used: requests.cpu=650m, limited: requests.cpu=750m

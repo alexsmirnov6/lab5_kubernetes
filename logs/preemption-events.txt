@@ -1,0 +1,2731 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 get events -n lab5 -o json
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "high",
+                "namespace": "lab5",
+                "resourceVersion": "5465",
+                "uid": "9233e471-086b-4ff9-a358-57d948a3affe"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:13Z",
+            "message": "0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: found a potential placement for pod on node lab5-worker, preempting 1 victims",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:13Z",
+                "name": "high.18e66204b7699344",
+                "namespace": "lab5",
+                "resourceVersion": "5467",
+                "uid": "2ed04e6f-efdc-48f7-85af-c57241e5ab1a"
+            },
+            "reason": "FailedScheduling",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:16Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "high",
+                "namespace": "lab5",
+                "resourceVersion": "5468",
+                "uid": "9233e471-086b-4ff9-a358-57d948a3affe"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:16Z",
+            "message": "Successfully assigned lab5/high to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:16Z",
+                "name": "high.18e6620562da0f15",
+                "namespace": "lab5",
+                "resourceVersion": "5482",
+                "uid": "0b24b8dc-9ae3-4011-a4ac-1a85da1856f0"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:17Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "high",
+                "namespace": "lab5",
+                "resourceVersion": "5480",
+                "uid": "9233e471-086b-4ff9-a358-57d948a3affe"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:17Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:17Z",
+                "name": "high.18e662057e6b9ff0",
+                "namespace": "lab5",
+                "resourceVersion": "5484",
+                "uid": "52463192-e1fe-4441-a7e2-a1e08e29a9be"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:17Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "high",
+                "namespace": "lab5",
+                "resourceVersion": "5480",
+                "uid": "9233e471-086b-4ff9-a358-57d948a3affe"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:17Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:17Z",
+                "name": "high.18e66205808db7de",
+                "namespace": "lab5",
+                "resourceVersion": "5486",
+                "uid": "283d10c1-e432-4042-ad5d-d9d210f7c6fd"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:17Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "high",
+                "namespace": "lab5",
+                "resourceVersion": "5480",
+                "uid": "9233e471-086b-4ff9-a358-57d948a3affe"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:17Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:17Z",
+                "name": "high.18e6620585881aba",
+                "namespace": "lab5",
+                "resourceVersion": "5487",
+                "uid": "970bb101-55b9-4e46-9ec9-e2b2cb2172ca"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5452",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:12Z",
+            "message": "Successfully assigned lab5/low to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:12Z",
+                "name": "low.18e6620450d61f6c",
+                "namespace": "lab5",
+                "resourceVersion": "5454",
+                "uid": "33a31b35-d046-42cd-9429-ab1090623743"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5453",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:12Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:12Z",
+                "name": "low.18e662046ba00069",
+                "namespace": "lab5",
+                "resourceVersion": "5457",
+                "uid": "a1e66a50-ccf4-4841-8344-090e94127141"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5453",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:12Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:12Z",
+                "name": "low.18e662046dc4eb1d",
+                "namespace": "lab5",
+                "resourceVersion": "5459",
+                "uid": "df2d674b-f307-4433-a4c7-581056d46684"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5453",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:12Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:12Z",
+                "name": "low.18e6620470ec8be5",
+                "namespace": "lab5",
+                "resourceVersion": "5460",
+                "uid": "661b426e-d177-4575-b79d-9d3939ae2b7c"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5461",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:13Z",
+            "message": "Preempted by pod 9233e471-086b-4ff9-a358-57d948a3affe on node lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:13Z",
+                "name": "low.18e66204b84635a2",
+                "namespace": "lab5",
+                "resourceVersion": "5471",
+                "uid": "93c4e551-39d9-487c-876a-df754e42c1d2"
+            },
+            "reason": "Preempted",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "low",
+                "namespace": "lab5",
+                "resourceVersion": "5453",
+                "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:13Z",
+            "message": "Stopping container pairs",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:13Z",
+                "name": "low.18e66204b8528bce",
+                "namespace": "lab5",
+                "resourceVersion": "5472",
+                "uid": "ea110d64-8baf-4cc5-ae72-cee028bfdee8"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-oom-kd2jf",
+                "namespace": "lab5",
+                "resourceVersion": "5115",
+                "uid": "b544083a-a639-4ba9-8102-06491d3aa929"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:18Z",
+            "message": "Successfully assigned lab5/pairs-oom-kd2jf to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:18Z",
+                "name": "pairs-oom-kd2jf.18e661f7daa77e9b",
+                "namespace": "lab5",
+                "resourceVersion": "5119",
+                "uid": "371d9678-7d20-464a-80fd-f01ce3066343"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-oom-kd2jf",
+                "namespace": "lab5",
+                "resourceVersion": "5118",
+                "uid": "b544083a-a639-4ba9-8102-06491d3aa929"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:19Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:19Z",
+                "name": "pairs-oom-kd2jf.18e661f7f8ff2055",
+                "namespace": "lab5",
+                "resourceVersion": "5121",
+                "uid": "97645b6b-aa43-4858-96bd-08b5c767004f"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-oom-kd2jf",
+                "namespace": "lab5",
+                "resourceVersion": "5118",
+                "uid": "b544083a-a639-4ba9-8102-06491d3aa929"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:19Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:19Z",
+                "name": "pairs-oom-kd2jf.18e661f7fba977f1",
+                "namespace": "lab5",
+                "resourceVersion": "5124",
+                "uid": "a90ad3db-2587-44ea-94ad-41522c05f705"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-oom-kd2jf",
+                "namespace": "lab5",
+                "resourceVersion": "5118",
+                "uid": "b544083a-a639-4ba9-8102-06491d3aa929"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:19Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:19Z",
+                "name": "pairs-oom-kd2jf.18e661f800a080a1",
+                "namespace": "lab5",
+                "resourceVersion": "5126",
+                "uid": "a653cbda-7e92-49a6-8d1c-07357ad4fe2a"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:18Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-oom",
+                "namespace": "lab5",
+                "resourceVersion": "5114",
+                "uid": "5b44cd22-f9cb-4301-b715-2daf3b1154ba"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:18Z",
+            "message": "Created pod: pairs-oom-kd2jf",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:18Z",
+                "name": "pairs-oom.18e661f7da1e52d3",
+                "namespace": "lab5",
+                "resourceVersion": "5117",
+                "uid": "ffd079c7-8d51-4d24-b218-934ad64a0099"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:22Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-oom",
+                "namespace": "lab5",
+                "resourceVersion": "5138",
+                "uid": "5b44cd22-f9cb-4301-b715-2daf3b1154ba"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:22Z",
+            "message": "Job has reached the specified backoff limit",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:22Z",
+                "name": "pairs-oom.18e661f8d7a282cb",
+                "namespace": "lab5",
+                "resourceVersion": "5141",
+                "uid": "4d1c24b5-1b12-4f58-bec7-936a57f7bd91"
+            },
+            "reason": "BackoffLimitExceeded",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-parallel-0-9vx6h",
+                "namespace": "lab5",
+                "resourceVersion": "5354",
+                "uid": "c6e0f96d-be5b-41a0-9fea-2d500fc87613"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Successfully assigned lab5/pairs-parallel-0-9vx6h to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel-0-9vx6h.18e6620161634614",
+                "namespace": "lab5",
+                "resourceVersion": "5360",
+                "uid": "a4be8f9b-d255-495d-a186-4c7ceb04aa20"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-0-9vx6h",
+                "namespace": "lab5",
+                "resourceVersion": "5356",
+                "uid": "c6e0f96d-be5b-41a0-9fea-2d500fc87613"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-0-9vx6h.18e662017e05c457",
+                "namespace": "lab5",
+                "resourceVersion": "5378",
+                "uid": "6d3ef543-1c62-43fe-9fd7-75b2457414f2"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-0-9vx6h",
+                "namespace": "lab5",
+                "resourceVersion": "5356",
+                "uid": "c6e0f96d-be5b-41a0-9fea-2d500fc87613"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-0-9vx6h.18e6620180ef6b6a",
+                "namespace": "lab5",
+                "resourceVersion": "5382",
+                "uid": "cd045835-37df-45e1-9102-6dcd515f588a"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-0-9vx6h",
+                "namespace": "lab5",
+                "resourceVersion": "5356",
+                "uid": "c6e0f96d-be5b-41a0-9fea-2d500fc87613"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-0-9vx6h.18e6620183c35680",
+                "namespace": "lab5",
+                "resourceVersion": "5388",
+                "uid": "b2cb881d-9a95-4c99-829a-d9baec12a900"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-parallel-1-4rrkc",
+                "namespace": "lab5",
+                "resourceVersion": "5358",
+                "uid": "ae5fd384-6906-43c2-9dd2-8f39a283ab95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Successfully assigned lab5/pairs-parallel-1-4rrkc to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel-1-4rrkc.18e66201623d4371",
+                "namespace": "lab5",
+                "resourceVersion": "5365",
+                "uid": "bfbac857-b6d1-41fd-b256-2e9de0f95601"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-1-4rrkc",
+                "namespace": "lab5",
+                "resourceVersion": "5363",
+                "uid": "ae5fd384-6906-43c2-9dd2-8f39a283ab95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-1-4rrkc.18e66201831d939a",
+                "namespace": "lab5",
+                "resourceVersion": "5386",
+                "uid": "b92e4ff2-d278-4f0e-a13a-1ff3ab7adc0f"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-1-4rrkc",
+                "namespace": "lab5",
+                "resourceVersion": "5363",
+                "uid": "ae5fd384-6906-43c2-9dd2-8f39a283ab95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-1-4rrkc.18e66201865eb51f",
+                "namespace": "lab5",
+                "resourceVersion": "5393",
+                "uid": "500da506-2223-4f93-815f-2393a3df1ee8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-1-4rrkc",
+                "namespace": "lab5",
+                "resourceVersion": "5363",
+                "uid": "ae5fd384-6906-43c2-9dd2-8f39a283ab95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-1-4rrkc.18e66201887e8fc5",
+                "namespace": "lab5",
+                "resourceVersion": "5394",
+                "uid": "3c417c60-a0fb-4f93-a539-f43ca4f3beb8"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-parallel-2-j6hp5",
+                "namespace": "lab5",
+                "resourceVersion": "5357",
+                "uid": "95886536-5bde-45d6-85d5-0bf633d288ac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Successfully assigned lab5/pairs-parallel-2-j6hp5 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel-2-j6hp5.18e66201623d9b2c",
+                "namespace": "lab5",
+                "resourceVersion": "5370",
+                "uid": "01468d72-5dcb-4a35-9722-2b70b92c4673"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-2-j6hp5",
+                "namespace": "lab5",
+                "resourceVersion": "5362",
+                "uid": "95886536-5bde-45d6-85d5-0bf633d288ac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-2-j6hp5.18e662017f505ee3",
+                "namespace": "lab5",
+                "resourceVersion": "5380",
+                "uid": "d0f2c59b-bc3e-4bb1-b33d-32b782ad09ac"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-2-j6hp5",
+                "namespace": "lab5",
+                "resourceVersion": "5362",
+                "uid": "95886536-5bde-45d6-85d5-0bf633d288ac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-2-j6hp5.18e6620182ca79f8",
+                "namespace": "lab5",
+                "resourceVersion": "5385",
+                "uid": "1aa68ccd-2908-44e0-adf6-1c30e25731b8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-2-j6hp5",
+                "namespace": "lab5",
+                "resourceVersion": "5362",
+                "uid": "95886536-5bde-45d6-85d5-0bf633d288ac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-2-j6hp5.18e66201855d5d02",
+                "namespace": "lab5",
+                "resourceVersion": "5391",
+                "uid": "5db56e9d-b7aa-4aad-80ff-314c636bf189"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-parallel-3-98hc8",
+                "namespace": "lab5",
+                "resourceVersion": "5361",
+                "uid": "19f2a5f9-0ebc-4d5f-869c-1fa8ab60343e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Successfully assigned lab5/pairs-parallel-3-98hc8 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel-3-98hc8.18e6620162e074c2",
+                "namespace": "lab5",
+                "resourceVersion": "5371",
+                "uid": "ae86b787-45c2-4cf0-8e36-a695350ee6e5"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-3-98hc8",
+                "namespace": "lab5",
+                "resourceVersion": "5368",
+                "uid": "19f2a5f9-0ebc-4d5f-869c-1fa8ab60343e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-3-98hc8.18e66201812afe45",
+                "namespace": "lab5",
+                "resourceVersion": "5383",
+                "uid": "3229dac7-d446-449b-84df-4b1b691eb7c1"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-3-98hc8",
+                "namespace": "lab5",
+                "resourceVersion": "5368",
+                "uid": "19f2a5f9-0ebc-4d5f-869c-1fa8ab60343e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-3-98hc8.18e6620185584c79",
+                "namespace": "lab5",
+                "resourceVersion": "5390",
+                "uid": "e72b1f11-d3cd-450b-948e-e83f659d1d15"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-parallel-3-98hc8",
+                "namespace": "lab5",
+                "resourceVersion": "5368",
+                "uid": "19f2a5f9-0ebc-4d5f-869c-1fa8ab60343e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:00Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:00Z",
+                "name": "pairs-parallel-3-98hc8.18e6620189ca111f",
+                "namespace": "lab5",
+                "resourceVersion": "5396",
+                "uid": "e7072326-50df-46f2-9c9c-8c802aaabadc"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-parallel",
+                "namespace": "lab5",
+                "resourceVersion": "5353",
+                "uid": "cf56eb55-d503-48bc-8855-f6e6f24270d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Created pod: pairs-parallel-0-9vx6h",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel.18e6620160f33d8f",
+                "namespace": "lab5",
+                "resourceVersion": "5355",
+                "uid": "17fa32c2-f104-4acf-9a4a-0fff4d447a3d"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-parallel",
+                "namespace": "lab5",
+                "resourceVersion": "5353",
+                "uid": "cf56eb55-d503-48bc-8855-f6e6f24270d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Created pod: pairs-parallel-1-4rrkc",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel.18e6620161604a7c",
+                "namespace": "lab5",
+                "resourceVersion": "5364",
+                "uid": "372d400e-9c55-49a5-a42d-afb865cb16a4"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-parallel",
+                "namespace": "lab5",
+                "resourceVersion": "5353",
+                "uid": "cf56eb55-d503-48bc-8855-f6e6f24270d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Created pod: pairs-parallel-2-j6hp5",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel.18e6620161604a7f",
+                "namespace": "lab5",
+                "resourceVersion": "5359",
+                "uid": "33a48d73-aa1e-4742-99be-4329ea0309f9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:59Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-parallel",
+                "namespace": "lab5",
+                "resourceVersion": "5353",
+                "uid": "cf56eb55-d503-48bc-8855-f6e6f24270d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:59Z",
+            "message": "Created pod: pairs-parallel-3-98hc8",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:59Z",
+                "name": "pairs-parallel.18e66201623f34cd",
+                "namespace": "lab5",
+                "resourceVersion": "5366",
+                "uid": "3dc93ba6-bbc0-4b79-88b0-b9d5692c0533"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:03Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-parallel",
+                "namespace": "lab5",
+                "resourceVersion": "5411",
+                "uid": "cf56eb55-d503-48bc-8855-f6e6f24270d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:03Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:03Z",
+                "name": "pairs-parallel.18e6620259013231",
+                "namespace": "lab5",
+                "resourceVersion": "5417",
+                "uid": "d9d1e73f-2359-41e5-8561-7e38b0a10218"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-profile-0-rjn24",
+                "namespace": "lab5",
+                "resourceVersion": "5143",
+                "uid": "83aec0e2-bb81-4917-8a2f-384cf1eaefdd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:23Z",
+            "message": "Successfully assigned lab5/pairs-profile-0-rjn24 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:23Z",
+                "name": "pairs-profile-0-rjn24.18e661f9042ffa1b",
+                "namespace": "lab5",
+                "resourceVersion": "5147",
+                "uid": "9bb2207f-74a6-4fa6-a9b2-a1af7705c9d1"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-0-rjn24",
+                "namespace": "lab5",
+                "resourceVersion": "5145",
+                "uid": "83aec0e2-bb81-4917-8a2f-384cf1eaefdd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:24Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:24Z",
+                "name": "pairs-profile-0-rjn24.18e661f91f0071a9",
+                "namespace": "lab5",
+                "resourceVersion": "5150",
+                "uid": "5efa286c-e96f-46ba-858d-c13622a8c9c9"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-0-rjn24",
+                "namespace": "lab5",
+                "resourceVersion": "5145",
+                "uid": "83aec0e2-bb81-4917-8a2f-384cf1eaefdd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:24Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:24Z",
+                "name": "pairs-profile-0-rjn24.18e661f920e67678",
+                "namespace": "lab5",
+                "resourceVersion": "5152",
+                "uid": "e6adaf82-74d1-40b0-8371-f217704da232"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-0-rjn24",
+                "namespace": "lab5",
+                "resourceVersion": "5145",
+                "uid": "83aec0e2-bb81-4917-8a2f-384cf1eaefdd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:24Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:24Z",
+                "name": "pairs-profile-0-rjn24.18e661f9250f9de6",
+                "namespace": "lab5",
+                "resourceVersion": "5153",
+                "uid": "f8f62797-f08a-446b-be87-ef6a4f7f986d"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:23Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-0",
+                "namespace": "lab5",
+                "resourceVersion": "5142",
+                "uid": "31c07a15-d803-48e7-a4a9-7202f84a6352"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:23Z",
+            "message": "Created pod: pairs-profile-0-rjn24",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:23Z",
+                "name": "pairs-profile-0.18e661f903b4e24d",
+                "namespace": "lab5",
+                "resourceVersion": "5146",
+                "uid": "b5bec754-67e2-4f0f-9e95-f8dcd5a96a3a"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:27Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-0",
+                "namespace": "lab5",
+                "resourceVersion": "5165",
+                "uid": "31c07a15-d803-48e7-a4a9-7202f84a6352"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:27Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:27Z",
+                "name": "pairs-profile-0.18e661fa038966ae",
+                "namespace": "lab5",
+                "resourceVersion": "5168",
+                "uid": "eb19b4a3-3a93-4880-8497-f38802cf9179"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:28Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-profile-1-cvtx4",
+                "namespace": "lab5",
+                "resourceVersion": "5172",
+                "uid": "a715eb55-3c94-4335-91bd-93874b50c48c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:28Z",
+            "message": "Successfully assigned lab5/pairs-profile-1-cvtx4 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:28Z",
+                "name": "pairs-profile-1-cvtx4.18e661fa278ff9c8",
+                "namespace": "lab5",
+                "resourceVersion": "5176",
+                "uid": "c0410094-ac0d-4455-a27c-ee7c6d09f8bd"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-1-cvtx4",
+                "namespace": "lab5",
+                "resourceVersion": "5175",
+                "uid": "a715eb55-3c94-4335-91bd-93874b50c48c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:29Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:29Z",
+                "name": "pairs-profile-1-cvtx4.18e661fa43aa438e",
+                "namespace": "lab5",
+                "resourceVersion": "5178",
+                "uid": "e03bfdc5-f84e-46c5-9134-6a128c79ba53"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-1-cvtx4",
+                "namespace": "lab5",
+                "resourceVersion": "5175",
+                "uid": "a715eb55-3c94-4335-91bd-93874b50c48c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:29Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:29Z",
+                "name": "pairs-profile-1-cvtx4.18e661fa45d0006c",
+                "namespace": "lab5",
+                "resourceVersion": "5180",
+                "uid": "58601719-1be2-4eb0-a5a6-2538850d60b6"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-1-cvtx4",
+                "namespace": "lab5",
+                "resourceVersion": "5175",
+                "uid": "a715eb55-3c94-4335-91bd-93874b50c48c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:29Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:29Z",
+                "name": "pairs-profile-1-cvtx4.18e661fa4a702e28",
+                "namespace": "lab5",
+                "resourceVersion": "5181",
+                "uid": "6ecb3f00-475e-4b74-b6c3-a7ec83ef55d4"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:28Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-1",
+                "namespace": "lab5",
+                "resourceVersion": "5171",
+                "uid": "3ac7f4b3-afbc-4cfb-a9bf-c843d398be64"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:28Z",
+            "message": "Created pod: pairs-profile-1-cvtx4",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:28Z",
+                "name": "pairs-profile-1.18e661fa26e1026b",
+                "namespace": "lab5",
+                "resourceVersion": "5174",
+                "uid": "3a954c4d-d508-4d58-b58a-e5165a5d7a9e"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:32Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-1",
+                "namespace": "lab5",
+                "resourceVersion": "5194",
+                "uid": "3ac7f4b3-afbc-4cfb-a9bf-c843d398be64"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:32Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:32Z",
+                "name": "pairs-profile-1.18e661fb2d42c082",
+                "namespace": "lab5",
+                "resourceVersion": "5197",
+                "uid": "f67ac30d-6658-4376-8b61-79a5de0270f9"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-profile-2-llr4s",
+                "namespace": "lab5",
+                "resourceVersion": "5199",
+                "uid": "71e1f63b-2a7e-4018-8595-f96e4e9da8a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:33Z",
+            "message": "Successfully assigned lab5/pairs-profile-2-llr4s to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:33Z",
+                "name": "pairs-profile-2-llr4s.18e661fb4b7d8621",
+                "namespace": "lab5",
+                "resourceVersion": "5203",
+                "uid": "2f47c187-f57a-43b3-8d89-b2b8366b8f5b"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-2-llr4s",
+                "namespace": "lab5",
+                "resourceVersion": "5201",
+                "uid": "71e1f63b-2a7e-4018-8595-f96e4e9da8a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:33Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:33Z",
+                "name": "pairs-profile-2-llr4s.18e661fb657e56c4",
+                "namespace": "lab5",
+                "resourceVersion": "5205",
+                "uid": "c3457f12-f6c5-4d63-9c8e-76ac2e582e3f"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-2-llr4s",
+                "namespace": "lab5",
+                "resourceVersion": "5201",
+                "uid": "71e1f63b-2a7e-4018-8595-f96e4e9da8a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:34Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:34Z",
+                "name": "pairs-profile-2-llr4s.18e661fb6c2ab1f4",
+                "namespace": "lab5",
+                "resourceVersion": "5208",
+                "uid": "2d004f18-07de-4def-b169-e1ce1b9679e0"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-profile-2-llr4s",
+                "namespace": "lab5",
+                "resourceVersion": "5201",
+                "uid": "71e1f63b-2a7e-4018-8595-f96e4e9da8a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:46Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:46Z",
+                "name": "pairs-profile-2-llr4s.18e661fe549da112",
+                "namespace": "lab5",
+                "resourceVersion": "5207",
+                "uid": "cfcae916-8e25-4039-b92a-b2af0b38626f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:33Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-2",
+                "namespace": "lab5",
+                "resourceVersion": "5198",
+                "uid": "1a7094a3-027e-4c49-a5a0-fd5ab370a773"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:33Z",
+            "message": "Created pod: pairs-profile-2-llr4s",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:33Z",
+                "name": "pairs-profile-2.18e661fb4b0822a6",
+                "namespace": "lab5",
+                "resourceVersion": "5200",
+                "uid": "e523d0b1-f713-48e1-bfc4-fe9c52ebf2a7"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:37Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-profile-2",
+                "namespace": "lab5",
+                "resourceVersion": "5221",
+                "uid": "1a7094a3-027e-4c49-a5a0-fd5ab370a773"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:37Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:37Z",
+                "name": "pairs-profile-2.18e661fc58252bc6",
+                "namespace": "lab5",
+                "resourceVersion": "5224",
+                "uid": "29f7ba5e-37ac-4865-a732-d0e82315429a"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:04Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-reduce-2msrq",
+                "namespace": "lab5",
+                "resourceVersion": "5421",
+                "uid": "1e69c85b-2e30-4528-b1e3-b65f89f48544"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:04Z",
+            "message": "Successfully assigned lab5/pairs-reduce-2msrq to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:04Z",
+                "name": "pairs-reduce-2msrq.18e6620293546504",
+                "namespace": "lab5",
+                "resourceVersion": "5425",
+                "uid": "d3155296-6356-443f-b6b3-20469b5d397c"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-reduce-2msrq",
+                "namespace": "lab5",
+                "resourceVersion": "5424",
+                "uid": "1e69c85b-2e30-4528-b1e3-b65f89f48544"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:05Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:05Z",
+                "name": "pairs-reduce-2msrq.18e66202aff1b4d6",
+                "namespace": "lab5",
+                "resourceVersion": "5427",
+                "uid": "617453a0-9793-497c-9a71-028b745f6291"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-reduce-2msrq",
+                "namespace": "lab5",
+                "resourceVersion": "5424",
+                "uid": "1e69c85b-2e30-4528-b1e3-b65f89f48544"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:05Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:05Z",
+                "name": "pairs-reduce-2msrq.18e66202b1f58892",
+                "namespace": "lab5",
+                "resourceVersion": "5429",
+                "uid": "3aa93213-c34a-45cd-873e-bdb94246e6b5"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-reduce-2msrq",
+                "namespace": "lab5",
+                "resourceVersion": "5424",
+                "uid": "1e69c85b-2e30-4528-b1e3-b65f89f48544"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:05Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:05Z",
+                "name": "pairs-reduce-2msrq.18e66202b61187bd",
+                "namespace": "lab5",
+                "resourceVersion": "5430",
+                "uid": "8a56577f-94f6-4e28-a971-587a6ebd9d49"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:04Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-reduce",
+                "namespace": "lab5",
+                "resourceVersion": "5420",
+                "uid": "5a7a6ada-a4d3-4b8b-b0b5-8da7e978caaf"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:04Z",
+            "message": "Created pod: pairs-reduce-2msrq",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:04Z",
+                "name": "pairs-reduce.18e6620292e960b3",
+                "namespace": "lab5",
+                "resourceVersion": "5422",
+                "uid": "7f17ab42-e9b4-41a2-b188-7895f9efeb80"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-reduce",
+                "namespace": "lab5",
+                "resourceVersion": "5443",
+                "uid": "5a7a6ada-a4d3-4b8b-b0b5-8da7e978caaf"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:09Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:09Z",
+                "name": "pairs-reduce.18e66203bf989ecb",
+                "namespace": "lab5",
+                "resourceVersion": "5446",
+                "uid": "919cb2ed-8e00-444d-8c9d-071f8ac5847c"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "pairs-sized-h9h2b",
+                "namespace": "lab5",
+                "resourceVersion": "5227",
+                "uid": "b042f241-0dfe-480e-a10a-4d2d34750de8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:38Z",
+            "message": "Successfully assigned lab5/pairs-sized-h9h2b to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:38Z",
+                "name": "pairs-sized-h9h2b.18e661fc6e79b245",
+                "namespace": "lab5",
+                "resourceVersion": "5231",
+                "uid": "ab8301ea-b6ce-4a88-9231-2c8be7e478e7"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-sized-h9h2b",
+                "namespace": "lab5",
+                "resourceVersion": "5228",
+                "uid": "b042f241-0dfe-480e-a10a-4d2d34750de8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:38Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:38Z",
+                "name": "pairs-sized-h9h2b.18e661fc891c800c",
+                "namespace": "lab5",
+                "resourceVersion": "5234",
+                "uid": "65596831-37d0-453f-abe0-e59093826578"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-sized-h9h2b",
+                "namespace": "lab5",
+                "resourceVersion": "5228",
+                "uid": "b042f241-0dfe-480e-a10a-4d2d34750de8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:38Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:38Z",
+                "name": "pairs-sized-h9h2b.18e661fc8b22fca7",
+                "namespace": "lab5",
+                "resourceVersion": "5236",
+                "uid": "42f759ce-73df-4a2f-a75e-752776500438"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "pairs-sized-h9h2b",
+                "namespace": "lab5",
+                "resourceVersion": "5228",
+                "uid": "b042f241-0dfe-480e-a10a-4d2d34750de8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:38Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:38Z",
+                "name": "pairs-sized-h9h2b.18e661fc8fb1c299",
+                "namespace": "lab5",
+                "resourceVersion": "5237",
+                "uid": "7b151f2f-148a-4ca1-9841-59a8cf55e204"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:38Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-sized",
+                "namespace": "lab5",
+                "resourceVersion": "5226",
+                "uid": "6051029d-2722-4634-b8aa-0c4c7c2f1655"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:38Z",
+            "message": "Created pod: pairs-sized-h9h2b",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:38Z",
+                "name": "pairs-sized.18e661fc6e155aab",
+                "namespace": "lab5",
+                "resourceVersion": "5229",
+                "uid": "8d7547aa-21d9-492c-9e3a-150a5e88dfdb"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:43Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "pairs-sized",
+                "namespace": "lab5",
+                "resourceVersion": "5250",
+                "uid": "6051029d-2722-4634-b8aa-0c4c7c2f1655"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:43Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:43Z",
+                "name": "pairs-sized.18e661fd83109030",
+                "namespace": "lab5",
+                "resourceVersion": "5253",
+                "uid": "d53d16ad-44e2-41a4-944d-bc0fc250d7ee"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "rustfs-67bbc4b96f-tcg68",
+                "namespace": "lab5",
+                "resourceVersion": "5261",
+                "uid": "351cccef-e377-49d4-8543-84816e862542"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:48Z",
+            "message": "Successfully assigned lab5/rustfs-67bbc4b96f-tcg68 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:48Z",
+                "name": "rustfs-67bbc4b96f-tcg68.18e661fece3811ae",
+                "namespace": "lab5",
+                "resourceVersion": "5302",
+                "uid": "cb138cfe-5a32-4e65-90b8-089c41421624"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-67bbc4b96f-tcg68",
+                "namespace": "lab5",
+                "resourceVersion": "5301",
+                "uid": "351cccef-e377-49d4-8543-84816e862542"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:49Z",
+            "message": "Container image \"rustfs/rustfs:1.0.0\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:49Z",
+                "name": "rustfs-67bbc4b96f-tcg68.18e661feea16e5db",
+                "namespace": "lab5",
+                "resourceVersion": "5305",
+                "uid": "77c966cc-664c-42e2-9f00-69e3d6f0241c"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-67bbc4b96f-tcg68",
+                "namespace": "lab5",
+                "resourceVersion": "5301",
+                "uid": "351cccef-e377-49d4-8543-84816e862542"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:49Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:49Z",
+                "name": "rustfs-67bbc4b96f-tcg68.18e661feec239bb4",
+                "namespace": "lab5",
+                "resourceVersion": "5307",
+                "uid": "4f565219-d835-45d7-a7a6-bd44127ca6e0"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-67bbc4b96f-tcg68",
+                "namespace": "lab5",
+                "resourceVersion": "5301",
+                "uid": "351cccef-e377-49d4-8543-84816e862542"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:49Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:49Z",
+                "name": "rustfs-67bbc4b96f-tcg68.18e661fef119eac9",
+                "namespace": "lab5",
+                "resourceVersion": "5308",
+                "uid": "e0450061-14aa-42a2-b2f6-64905cbdaee2"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "rustfs-67bbc4b96f",
+                "namespace": "lab5",
+                "resourceVersion": "5258",
+                "uid": "f49d4531-35e7-4d81-b7dd-f2bb0c4f6bc9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:44Z",
+            "message": "Created pod: rustfs-67bbc4b96f-tcg68",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:44Z",
+                "name": "rustfs-67bbc4b96f.18e661fdde85911b",
+                "namespace": "lab5",
+                "resourceVersion": "5262",
+                "uid": "ba9994de-f92f-4699-b4ee-575f4916c6d9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-data",
+                "namespace": "lab5",
+                "resourceVersion": "5255",
+                "uid": "69a45f0f-d25a-4d80-8c2f-276228471e26"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:44Z",
+            "message": "waiting for first consumer to be created before binding",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:44Z",
+                "name": "rustfs-data.18e661fdd68f7876",
+                "namespace": "lab5",
+                "resourceVersion": "5256",
+                "uid": "b91f1339-fbda-4e91-a3d7-f471de8fc688"
+            },
+            "reason": "WaitForFirstConsumer",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-data",
+                "namespace": "lab5",
+                "resourceVersion": "5268",
+                "uid": "69a45f0f-d25a-4d80-8c2f-276228471e26"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:44Z",
+            "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:44Z",
+                "name": "rustfs-data.18e661fddfbfcfad",
+                "namespace": "lab5",
+                "resourceVersion": "5273",
+                "uid": "dfe8bb3f-365f-4e96-9440-89dfed6b4860"
+            },
+            "reason": "ExternalProvisioning",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:44Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-data",
+                "namespace": "lab5",
+                "resourceVersion": "5268",
+                "uid": "69a45f0f-d25a-4d80-8c2f-276228471e26"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:44Z",
+            "message": "External provisioner is provisioning volume for claim \"lab5/rustfs-data\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:44Z",
+                "name": "rustfs-data.18e661fddff08680",
+                "namespace": "lab5",
+                "resourceVersion": "5271",
+                "uid": "e30d1b06-4ab4-4c8e-865c-563c740e6d56"
+            },
+            "reason": "Provisioning",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-75f7fc7dc5-mqk47_5118e9ea-b63e-470a-bd62-64d0a864a657",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-75f7fc7dc5-mqk47_5118e9ea-b63e-470a-bd62-64d0a864a657"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-data",
+                "namespace": "lab5",
+                "resourceVersion": "5268",
+                "uid": "69a45f0f-d25a-4d80-8c2f-276228471e26"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:47Z",
+            "message": "Successfully provisioned volume pvc-69a45f0f-d25a-4d80-8c2f-276228471e26",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:47Z",
+                "name": "rustfs-data.18e661fe95977409",
+                "namespace": "lab5",
+                "resourceVersion": "5294",
+                "uid": "9225d093-84db-467b-83d4-640d62c4db41"
+            },
+            "reason": "ProvisioningSucceeded",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-75f7fc7dc5-mqk47_5118e9ea-b63e-470a-bd62-64d0a864a657",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-75f7fc7dc5-mqk47_5118e9ea-b63e-470a-bd62-64d0a864a657"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "rustfs",
+                "namespace": "lab5",
+                "resourceVersion": "5257",
+                "uid": "3477727b-398b-42c0-b899-5ee2197f646b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:44Z",
+            "message": "Scaled up replica set rustfs-67bbc4b96f from 0 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:44Z",
+                "name": "rustfs.18e661fdde09359b",
+                "namespace": "lab5",
+                "resourceVersion": "5259",
+                "uid": "87762369-78e4-4cb7-9412-88fe62bb4a89"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "upload-vp4k8",
+                "namespace": "lab5",
+                "resourceVersion": "5327",
+                "uid": "1cdd35c4-3d23-45a0-b5be-9d1ddeb101c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:55Z",
+            "message": "Successfully assigned lab5/upload-vp4k8 to lab5-worker",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:55Z",
+                "name": "upload-vp4k8.18e66200817d959c",
+                "namespace": "lab5",
+                "resourceVersion": "5332",
+                "uid": "03b5a15e-c46c-4feb-824d-277a46a06bb8"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:56Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "upload-vp4k8",
+                "namespace": "lab5",
+                "resourceVersion": "5330",
+                "uid": "1cdd35c4-3d23-45a0-b5be-9d1ddeb101c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:56Z",
+            "message": "Container image \"lab5-pairs:1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:56Z",
+                "name": "upload-vp4k8.18e662009c0147e7",
+                "namespace": "lab5",
+                "resourceVersion": "5336",
+                "uid": "9e6a4cf1-ef19-4287-af99-016b54ce7206"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:56Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "upload-vp4k8",
+                "namespace": "lab5",
+                "resourceVersion": "5330",
+                "uid": "1cdd35c4-3d23-45a0-b5be-9d1ddeb101c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:56Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:56Z",
+                "name": "upload-vp4k8.18e662009ddde75b",
+                "namespace": "lab5",
+                "resourceVersion": "5338",
+                "uid": "cee44efa-6c4c-4b63-ba15-554374e9a640"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:56Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{pairs}",
+                "kind": "Pod",
+                "name": "upload-vp4k8",
+                "namespace": "lab5",
+                "resourceVersion": "5330",
+                "uid": "1cdd35c4-3d23-45a0-b5be-9d1ddeb101c0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:56Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:56Z",
+                "name": "upload-vp4k8.18e662009fe20aa6",
+                "namespace": "lab5",
+                "resourceVersion": "5340",
+                "uid": "dc1f9393-be9d-4197-8d7e-b79e221050a1"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "lab5-worker",
+            "source": {
+                "component": "kubelet",
+                "host": "lab5-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:55Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "upload",
+                "namespace": "lab5",
+                "resourceVersion": "5326",
+                "uid": "476a1c81-f9be-49dc-a4d9-2cfe2498a186"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:55Z",
+            "message": "Created pod: upload-vp4k8",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:55Z",
+                "name": "upload.18e662008101b420",
+                "namespace": "lab5",
+                "resourceVersion": "5328",
+                "uid": "0799ba82-3dc5-4c65-ae8f-2a40562acb25"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:00:58Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "upload",
+                "namespace": "lab5",
+                "resourceVersion": "5349",
+                "uid": "476a1c81-f9be-49dc-a4d9-2cfe2498a186"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:00:58Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:00:58Z",
+                "name": "upload.18e6620136009395",
+                "namespace": "lab5",
+                "resourceVersion": "5352",
+                "uid": "f8b88321-de09-4593-94ae-1e825aa4be14"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-09T13:01:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "waiting",
+                "namespace": "lab5",
+                "resourceVersion": "5462",
+                "uid": "83091be8-6cee-47d5-9c1d-c8588f0e0202"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-09T13:01:16Z",
+            "message": "0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: 0/2 nodes are available: 1 Insufficient cpu, 1 Preemption is not helpful for scheduling.",
+            "metadata": {
+                "creationTimestamp": "2026-11-09T13:01:13Z",
+                "name": "waiting.18e66204a1957083",
+                "namespace": "lab5",
+                "resourceVersion": "5481",
+                "uid": "2a162d0c-f8ef-4563-8be3-1c25c34ad404"
+            },
+            "reason": "FailedScheduling",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Warning"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

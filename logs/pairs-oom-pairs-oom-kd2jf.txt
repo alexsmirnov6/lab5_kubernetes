@@ -1,0 +1,2 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 logs pairs-oom-kd2jf -n lab5
+{"event": "started", "mode": "local"}

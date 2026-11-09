@@ -1,0 +1,16 @@
+{
+  "apiVersion": "v1",
+  "kind": "ResourceQuota",
+  "metadata": {
+    "name": "compute-budget",
+    "namespace": "lab5"
+  },
+  "spec": {
+    "hard": {
+      "requests.cpu": "750m",
+      "requests.memory": "512Mi",
+      "limits.memory": "2Gi",
+      "pods": "3"
+    }
+  }
+}

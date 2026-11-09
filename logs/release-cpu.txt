@@ -1,0 +1,3 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 delete pod high waiting -n lab5 --wait=true
+pod "high" deleted from lab5 namespace
+pod "waiting" deleted from lab5 namespace

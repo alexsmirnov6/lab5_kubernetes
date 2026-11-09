@@ -1,0 +1,16 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 get pods -n lab5 -o wide
+NAME                      READY   STATUS      RESTARTS   AGE   IP            NODE          NOMINATED NODE   READINESS GATES
+high                      1/1     Running     0          5s    10.244.1.69   lab5-worker   <none>           <none>
+pairs-oom-kd2jf           0/1     OOMKilled   0          60s   10.244.1.55   lab5-worker   <none>           <none>
+pairs-parallel-0-9vx6h    0/1     Completed   0          19s   10.244.1.63   lab5-worker   <none>           <none>
+pairs-parallel-1-4rrkc    0/1     Completed   0          19s   10.244.1.65   lab5-worker   <none>           <none>
+pairs-parallel-2-j6hp5    0/1     Completed   0          19s   10.244.1.64   lab5-worker   <none>           <none>
+pairs-parallel-3-98hc8    0/1     Completed   0          19s   10.244.1.66   lab5-worker   <none>           <none>
+pairs-profile-0-rjn24     0/1     Completed   0          55s   10.244.1.56   lab5-worker   <none>           <none>
+pairs-profile-1-cvtx4     0/1     Completed   0          50s   10.244.1.57   lab5-worker   <none>           <none>
+pairs-profile-2-llr4s     0/1     Completed   0          45s   10.244.1.58   lab5-worker   <none>           <none>
+pairs-reduce-2msrq        0/1     Completed   0          14s   10.244.1.67   lab5-worker   <none>           <none>
+pairs-sized-h9h2b         0/1     Completed   0          40s   10.244.1.59   lab5-worker   <none>           <none>
+rustfs-67bbc4b96f-tcg68   1/1     Running     0          34s   10.244.1.61   lab5-worker   <none>           <none>
+upload-vp4k8              0/1     Completed   0          23s   10.244.1.62   lab5-worker   <none>           <none>
+waiting                   0/1     Pending     0          5s    <none>        <none>        <none>           <none>

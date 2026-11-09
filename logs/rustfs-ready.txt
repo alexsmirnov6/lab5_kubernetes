@@ -1,0 +1,3 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 rollout status deployment/rustfs -n lab5 --timeout=180s
+Waiting for deployment "rustfs" rollout to finish: 0 of 1 updated replicas are available...
+deployment "rustfs" successfully rolled out

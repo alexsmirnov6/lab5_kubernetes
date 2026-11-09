@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-11-09T13:03:13.465625+00:00",
+  "technical_criteria_passed": true,
+  "checks": [
+    "40Mi OOMKilled, exit 137, started event",
+    "three measured peaks and successful 64Mi run",
+    "all 25462 pair counts and top10 equal lab3",
+    "four S3 ranges cover input without gaps",
+    "Insufficient cpu Pending",
+    "Preempted low priority Pod",
+    "Forbidden exceeded quota",
+    "raw Pod logs match summary and manifests",
+    "5 unit tests passed",
+    "20 manifests passed client dry-run",
+    "six PDF pages visually reviewed"
+  ],
+  "public_repository_verified": false,
+  "github_anonymous_http_status": 404,
+  "pending": "Publish the project to a public GitHub repository and submit its URL with the PDF.",
+  "submission_files_before_this_audit": 99,
+  "submission_bytes_before_this_audit": 8160084,
+  "excluded_directories": [
+    "tools",
+    "tmp",
+    "__pycache__",
+    ".venv"
+  ],
+  "pdf_sha256": "1dbeab5dfcdf7abd0da39614ef1613585ac428d07978f68c7846013dd3f078d7",
+  "commits_created": false,
+  "pushed": false
+}

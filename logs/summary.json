@@ -1,0 +1,875 @@
+{
+  "started_utc": "2026-11-09T13:00:31.150734+00:00",
+  "oom": {
+    "containerID": "containerd://b7f726f4750bea22bb9e21ec19a7fa5a810e347fa733c2d11f43589a85a52e39",
+    "exitCode": 137,
+    "finishedAt": "2026-11-09T13:00:20Z",
+    "reason": "OOMKilled",
+    "startedAt": "2026-11-09T13:00:19Z"
+  },
+  "profiles": [
+    {
+      "vacancies": 6215,
+      "unique_pairs": 25462,
+      "pair_occurrences": 173204,
+      "sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 1583
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 1549
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 1444
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 1069
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 1032
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 966
+        },
+        {
+          "skills": [
+            "ansible",
+            "kubernetes"
+          ],
+          "count": 940
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 922
+        }
+      ],
+      "event": "completed",
+      "mode": "local",
+      "elapsed_seconds": 0.446641,
+      "peak_rss_bytes": 55791616,
+      "cgroup_peak_bytes": 44597248
+    },
+    {
+      "vacancies": 6215,
+      "unique_pairs": 25462,
+      "pair_occurrences": 173204,
+      "sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 1583
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 1549
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 1444
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 1069
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 1032
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 966
+        },
+        {
+          "skills": [
+            "ansible",
+            "kubernetes"
+          ],
+          "count": 940
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 922
+        }
+      ],
+      "event": "completed",
+      "mode": "local",
+      "elapsed_seconds": 0.405493,
+      "peak_rss_bytes": 55816192,
+      "cgroup_peak_bytes": 44548096
+    },
+    {
+      "vacancies": 6215,
+      "unique_pairs": 25462,
+      "pair_occurrences": 173204,
+      "sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 1583
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 1549
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 1444
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 1069
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 1032
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 990
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 966
+        },
+        {
+          "skills": [
+            "ansible",
+            "kubernetes"
+          ],
+          "count": 940
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 922
+        }
+      ],
+      "event": "completed",
+      "mode": "local",
+      "elapsed_seconds": 0.48645,
+      "peak_rss_bytes": 56315904,
+      "cgroup_peak_bytes": 44544000
+    }
+  ],
+  "limit_mib": 64,
+  "sized": {
+    "vacancies": 6215,
+    "unique_pairs": 25462,
+    "pair_occurrences": 173204,
+    "sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+    "top10": [
+      {
+        "skills": [
+          "docker",
+          "linux"
+        ],
+        "count": 1583
+      },
+      {
+        "skills": [
+          "docker",
+          "kubernetes"
+        ],
+        "count": 1549
+      },
+      {
+        "skills": [
+          "kubernetes",
+          "linux"
+        ],
+        "count": 1444
+      },
+      {
+        "skills": [
+          "ansible",
+          "linux"
+        ],
+        "count": 1069
+      },
+      {
+        "skills": [
+          "devops",
+          "linux"
+        ],
+        "count": 1032
+      },
+      {
+        "skills": [
+          "ansible",
+          "docker"
+        ],
+        "count": 990
+      },
+      {
+        "skills": [
+          "devops",
+          "docker"
+        ],
+        "count": 990
+      },
+      {
+        "skills": [
+          "devops",
+          "kubernetes"
+        ],
+        "count": 966
+      },
+      {
+        "skills": [
+          "ansible",
+          "kubernetes"
+        ],
+        "count": 940
+      },
+      {
+        "skills": [
+          "linux",
+          "python"
+        ],
+        "count": 922
+      }
+    ],
+    "event": "completed",
+    "mode": "local",
+    "elapsed_seconds": 0.490743,
+    "peak_rss_bytes": 56049664,
+    "cgroup_peak_bytes": 44576768
+  },
+  "expected_sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+  "upload": {
+    "event": "uploaded",
+    "bytes": 1880228,
+    "sha256": "5c9daf1ac2c16c3aad36d97e6e23c7cffc6d92f0cf4ca215d73f8140e721b0c7"
+  },
+  "parts": [
+    {
+      "vacancies": 1554,
+      "unique_pairs": 9766,
+      "pair_occurrences": 42185,
+      "sha256": "475020bfea40c907c1188b4ebacbdb45f9044d64f740b3b92cb7dd462775adc3",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 385
+        },
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 384
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 350
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 282
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 267
+        },
+        {
+          "skills": [
+            "ansible",
+            "kubernetes"
+          ],
+          "count": 260
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 256
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 238
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 238
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 236
+        }
+      ],
+      "event": "completed",
+      "mode": "map",
+      "elapsed_seconds": 0.50037,
+      "peak_rss_bytes": 61902848,
+      "cgroup_peak_bytes": 50962432
+    },
+    {
+      "vacancies": 1602,
+      "unique_pairs": 10034,
+      "pair_occurrences": 40828,
+      "sha256": "c15421dfb1675d8728018b6a2220a366a30a5bdfca782fb00f21e7d66a90c461",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 371
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 370
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 355
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 280
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 272
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 262
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 261
+        },
+        {
+          "skills": [
+            "ansible",
+            "kubernetes"
+          ],
+          "count": 247
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 232
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 213
+        }
+      ],
+      "event": "completed",
+      "mode": "map",
+      "elapsed_seconds": 0.497484,
+      "peak_rss_bytes": 61370368,
+      "cgroup_peak_bytes": 51109888
+    },
+    {
+      "vacancies": 1548,
+      "unique_pairs": 11474,
+      "pair_occurrences": 42779,
+      "sha256": "541bd14f782abb8e9b384bbabb6b1795006ebdda4cde306f390e18276ed6dea2",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 381
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 380
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 344
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 238
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 238
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 230
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 230
+        },
+        {
+          "skills": [
+            "bash",
+            "linux"
+          ],
+          "count": 220
+        },
+        {
+          "skills": [
+            "devops",
+            "kubernetes"
+          ],
+          "count": 213
+        },
+        {
+          "skills": [
+            "ci/cd",
+            "kubernetes"
+          ],
+          "count": 210
+        }
+      ],
+      "event": "completed",
+      "mode": "map",
+      "elapsed_seconds": 0.507341,
+      "peak_rss_bytes": 63594496,
+      "cgroup_peak_bytes": 53067776
+    },
+    {
+      "vacancies": 1511,
+      "unique_pairs": 10814,
+      "pair_occurrences": 47412,
+      "sha256": "1c21102b44ac8efec9050132344ad8380095593540c553359c3397806e7c1227",
+      "top10": [
+        {
+          "skills": [
+            "docker",
+            "linux"
+          ],
+          "count": 447
+        },
+        {
+          "skills": [
+            "docker",
+            "kubernetes"
+          ],
+          "count": 414
+        },
+        {
+          "skills": [
+            "kubernetes",
+            "linux"
+          ],
+          "count": 395
+        },
+        {
+          "skills": [
+            "ansible",
+            "linux"
+          ],
+          "count": 287
+        },
+        {
+          "skills": [
+            "ansible",
+            "docker"
+          ],
+          "count": 264
+        },
+        {
+          "skills": [
+            "devops",
+            "linux"
+          ],
+          "count": 263
+        },
+        {
+          "skills": [
+            "devops",
+            "docker"
+          ],
+          "count": 261
+        },
+        {
+          "skills": [
+            "linux",
+            "python"
+          ],
+          "count": 261
+        },
+        {
+          "skills": [
+            "linux",
+            "postgresql"
+          ],
+          "count": 244
+        },
+        {
+          "skills": [
+            "bash",
+            "linux"
+          ],
+          "count": 242
+        }
+      ],
+      "event": "completed",
+      "mode": "map",
+      "elapsed_seconds": 0.504579,
+      "peak_rss_bytes": 61894656,
+      "cgroup_peak_bytes": 51331072
+    }
+  ],
+  "parallel": {
+    "vacancies": 6215,
+    "unique_pairs": 25462,
+    "pair_occurrences": 173204,
+    "sha256": "6c6badc5fe61c28abe84df73a97880bcdb9949b2cda47e02db1e9f5ed11bb838",
+    "top10": [
+      {
+        "skills": [
+          "docker",
+          "linux"
+        ],
+        "count": 1583
+      },
+      {
+        "skills": [
+          "docker",
+          "kubernetes"
+        ],
+        "count": 1549
+      },
+      {
+        "skills": [
+          "kubernetes",
+          "linux"
+        ],
+        "count": 1444
+      },
+      {
+        "skills": [
+          "ansible",
+          "linux"
+        ],
+        "count": 1069
+      },
+      {
+        "skills": [
+          "devops",
+          "linux"
+        ],
+        "count": 1032
+      },
+      {
+        "skills": [
+          "ansible",
+          "docker"
+        ],
+        "count": 990
+      },
+      {
+        "skills": [
+          "devops",
+          "docker"
+        ],
+        "count": 990
+      },
+      {
+        "skills": [
+          "devops",
+          "kubernetes"
+        ],
+        "count": 966
+      },
+      {
+        "skills": [
+          "ansible",
+          "kubernetes"
+        ],
+        "count": 940
+      },
+      {
+        "skills": [
+          "linux",
+          "python"
+        ],
+        "count": 922
+      }
+    ],
+    "event": "completed",
+    "mode": "reduce",
+    "elapsed_seconds": 0.799618,
+    "peak_rss_bytes": 77012992,
+    "cgroup_peak_bytes": 67690496
+  },
+  "s3_objects": [
+    {
+      "key": "input/vacancies.ndjson",
+      "bytes": 1880228
+    },
+    {
+      "key": "runs/parallel/pairs.json",
+      "bytes": 1532307
+    },
+    {
+      "key": "runs/parallel/part-0.json",
+      "bytes": 563642
+    },
+    {
+      "key": "runs/parallel/part-1.json",
+      "bytes": 580127
+    },
+    {
+      "key": "runs/parallel/part-2.json",
+      "bytes": 687183
+    },
+    {
+      "key": "runs/parallel/part-3.json",
+      "bytes": 652749
+    }
+  ],
+  "ranges": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 470056,
+      "vacancies": 1554,
+      "unique_pairs": 9766
+    },
+    {
+      "index": 1,
+      "start": 470057,
+      "end": 940113,
+      "vacancies": 1602,
+      "unique_pairs": 10034
+    },
+    {
+      "index": 2,
+      "start": 940114,
+      "end": 1410170,
+      "vacancies": 1548,
+      "unique_pairs": 11474
+    },
+    {
+      "index": 3,
+      "start": 1410171,
+      "end": 1880227,
+      "vacancies": 1511,
+      "unique_pairs": 10814
+    }
+  ],
+  "all_pairs_equal": true,
+  "waiting": {
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-09T13:01:13Z",
+        "message": "0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: 0/2 nodes are available: 1 Insufficient cpu, 1 Preemption is not helpful for scheduling.",
+        "observedGeneration": 1,
+        "reason": "Unschedulable",
+        "status": "False",
+        "type": "PodScheduled"
+      }
+    ],
+    "phase": "Pending",
+    "qosClass": "Guaranteed"
+  },
+  "preemption": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-09T13:01:13Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "low",
+        "namespace": "lab5",
+        "resourceVersion": "5461",
+        "uid": "05e1e6ab-cb01-477d-bcfe-9a4631f1b920"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-09T13:01:13Z",
+      "message": "Preempted by pod 9233e471-086b-4ff9-a358-57d948a3affe on node lab5-worker",
+      "metadata": {
+        "creationTimestamp": "2026-11-09T13:01:13Z",
+        "name": "low.18e66204b84635a2",
+        "namespace": "lab5",
+        "resourceVersion": "5471",
+        "uid": "93c4e551-39d9-487c-876a-df754e42c1d2"
+      },
+      "reason": "Preempted",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    }
+  ],
+  "quota_rejection": "Error from server (Forbidden): error when creating \"C:\\\\Users\\\\Alex\\\\Documents\\\\inj_dan\\\\lab5\\\\manifests\\\\quota-rejected.json\": pods \"quota-rejected\" is forbidden: exceeded quota: compute-budget, requested: requests.cpu=400m, used: requests.cpu=650m, limited: requests.cpu=750m\n",
+  "finished_utc": "2026-11-09T13:01:36.075336+00:00"
+}

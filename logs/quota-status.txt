@@ -1,0 +1,9 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 describe resourcequota -n lab5
+Name:            compute-budget
+Namespace:       lab5
+Resource         Used    Hard
+--------         ----    ----
+limits.memory    1088Mi  2Gi
+pods             2       3
+requests.cpu     650m    750m
+requests.memory  320Mi   512Mi

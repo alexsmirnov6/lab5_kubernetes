@@ -1,0 +1,10 @@
+test_every_boundary_including_unterminated_last_record (test_pairs.PairTests.test_every_boundary_including_unterminated_last_record) ... ok
+test_full_lab3_result (test_pairs.PairTests.test_full_lab3_result) ... ok
+test_invalid_skills_rejected (test_pairs.PairTests.test_invalid_skills_rejected) ... ok
+test_long_record_and_ranges_wholly_inside_record (test_pairs.PairTests.test_long_record_and_ranges_wholly_inside_record) ... ok
+test_unique_skills_and_deterministic_order (test_pairs.PairTests.test_unique_skills_and_deterministic_order) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.091s
+
+OK

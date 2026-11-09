@@ -1,0 +1,49 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 describe pod waiting -n lab5
+Name:                 waiting
+Namespace:            lab5
+Priority:             10
+Priority Class Name:  lab5-low
+Service Account:      default
+Node:                 <none>
+Labels:               <none>
+Annotations:          <none>
+Status:               Pending
+IP:                   
+IPs:                  <none>
+Containers:
+  pairs:
+    Image:      lab5-pairs:1
+    Port:       <none>
+    Host Port:  <none>
+    Args:
+      hold
+    Limits:
+      cpu:     1200m
+      memory:  64Mi
+    Requests:
+      cpu:     1200m
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:            http://rustfs:9000
+      AWS_ACCESS_KEY_ID:      lab5-access
+      AWS_SECRET_ACCESS_KEY:  lab5-local-secret
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-25tkf (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-25tkf:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              lab=compute
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  12s   default-scheduler  0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint(s). preemption: 0/2 nodes are available: 1 Insufficient cpu, 1 Preemption is not helpful for scheduling.

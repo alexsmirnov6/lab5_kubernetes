@@ -1,0 +1,2 @@
+$ C:\Users\Alex\Documents\inj_dan\lab5\tools\kubectl.exe --context kind-lab5 apply -f C:\Users\Alex\Documents\inj_dan\lab5\manifests\namespace.json
+namespace/lab5 created

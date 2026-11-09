@@ -1,0 +1,6 @@
+*
+!src/
+!src/**
+!requirements.txt
+!data/
+!data/vacancies.ndjson
